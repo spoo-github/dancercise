@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> BootstrapWebsite</title>
+        <link rel="stylesheet" type="text/css" href="C:\Users\Lenovo\Desktop\potfol\css\Lavani.css">
+        <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
+<!-- Popper JS -->
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+    </head><body>
+        <div class="navi">
+            <nav class="navbar navbar-expand-md navbar-custom fixed-top">
+                <div class="container">
+                    <a href="" class="navbar-brand text-white font-weight-bold">LAVANI</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsenavbar"> 
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse " text-center id="collapsenavbar">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#ORIGIN" class="nav-link text-white"> ABOUT</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="#gall" class="nav-link text-white">GALLERY</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="#ARTIST" class="nav-link text-white">ARTIST</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="mainpage.html" class="nav-link text-white">HOME</a>
+                        </li>
+
+                    </ul>
+                </div>
+            
+                </div>
+            </nav>
+            
+        </div>
+        <section class="container origin text-center" id="ORIGIN">
+            <h1>ABOUT</h1>
+            <p>Lavani is a combination of traditional song and dance which is performed to the dholki drum. Noted for its powerful rhythm and eroticism, Lavani has contributed to the development of Marathi folk theatre.In Maharashtra and southern Madhya Pradesh, it is performed by women wearing nine-yard-long saris. The songs are sung at a quick tempo.The Lavani dance originated as a form of morale booster for warring troops during the 18th and the 19th century when the state of Maharashtra was embroiled in conflict and turmoil.
+
+                The dance form reached the peak of its popularity during the rule of the Peshawari Dynasty that was seated in Pune during which it was given support by the ruling elite.
+                
+                The Lavani dance is generally performed by Dhangars or shepherds living in the Sholapur district of Maharashtra. They are inspired by nature and the dance form contains tales of the birth of Biruba, their deity.
+                
+                The more commonly performed forms of the Lavani dance are concentrated in Maharashtra and are not restricted to the Dhangar community.
+
+            </p>
+            <div class="row rowsettings">
+                </div>
+            </div>
+        </section>
+
+        <section class="imgss" id="gall">
+            <h1>GALLERY</h1>
+           <div class="container">
+               <div class="image-container">
+                   <div class="image"><img src="C:\Users\Lenovo\Desktop\potfol\images\amruta-khanvilkar-.webp"  alt=""></div>
+                   <div class="image"><img src="C:\Users\Lenovo\Desktop\potfol\images\L100.jpg" alt=""></div>
+                   <div class="image"><img src="C:\Users\Lenovo\Desktop\potfol\images\l300.jpeg" alt=""></div>
+                   <div class="image"><img src="C:\Users\Lenovo\Desktop\potfol\images\L400.jpeg" alt=""></div>
+                   <div class="image"><img src="C:\Users\Lenovo\Desktop\potfol\images\L500.jpg" alt=""></div>
+                   <div class="image"><img src="C:\Users\Lenovo\Desktop\potfol\images\lavani_200.jpg" alt=""></div>
+            
+                                            
+      
+               </div>
+          
+           <div class="popup-img">
+               <span>&times;</span>
+               <img src="images/amruta-khanvilkar-.webp" alt="">
+           </div>
+       </div>
+   </section>
+       <script>
+           document.querySelectorAll('.image-container img').forEach(image =>{
+               image.onclick = () =>{
+               document.querySelector('.popup-img').style.display = 'block';
+               document.querySelector('.popup-img img').src = image.getAttribute('src');
+               }
+           });
+           document.querySelector('.popup-img span').onclick = () =>{
+              document.querySelector('.popup-img').style.display = 'none';
+           }
+       </script>
+       <!-- /////////////////////ARTISTS//////////////////////////////-->
+         <section class="artist bg-light" id="ARTIST">
+            <div class="container text-center">
+                <h1>ARTIST</h1>
+                <p>Famous Artist</p>
+                <div class="row">
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-12 col-10 d-block">
+                        <div class="card">
+                            <img src="C:\Users\Lenovo\Desktop\potfol\images\LA011.webp" class="card-img img-fluid" >
+                            <div class="card-body">
+                                <h2>Surekha Punekar</h2>
+                                <h2 class="card-title" ></h2>Surekha Punekar is an Indian actress and folk artist known for her lavani performances.
+
+                                Punekar came from a financially poor family and worked as a maid to make ends meet. In her initial days as an artist, she performed in the various Tamasha troupes on the lavanis written by the well-known poet Bashir Momin Kavathekar. After performing in various Tamasha troupes, she started her own Tamasha troupe with her sister Lata Punekar with support from Baba Pathan and Momin Kavathekar. This new troupe initially operated from Kavathe Yamai. However, the venture was unprofitable so the troupe closed. She then tried performing stage shows under the banner Natarangi Nar from 1998 onwards. Initially they received a cold response from the audience; she mentions once having performed for an audience of just three people.[1] However, the show eventually became famous, especially after she won first prize in the lavani competition held in Akluj Lavani Mahotsav. </h2>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-12 col-10 d-block ">
+                        <div class="card">
+                            <img src="C:\Users\Lenovo\Desktop\potfol\images\LA012.webp" class="card-img img-fluid" >
+                            <div class="card-body">
+                                <h2>Vithabai Bhau Mang Narayangaonkar </h2>
+                                <h2 class="card-title" ></h2>Vithabai was born and grew up in a family of artists. She was born in the city of Pandharpur, Solapur district, Maharashtra. Bhau-Bapu Mang Narayangaonkar was the family troupe run by her father and uncle.She achieved high appreciation and thereby her troupe was honoured with the most prestigious President's award in the Tamasha genre of art. She was called "Tamasha Samradini" (Tamasha Empress) by her fans and also honoured so by the government.
+
+                                Government of Maharashtra has instituted annual "Vithabai Narayangavkar Lifetime Achievement Award" in her memory in 2006. The award is conferred on those who had extensively contributed to the preservation and propagation of the Tamasha Art.Lokshahir Bashir Momin Kavathekar has been conferred with this award for year 2017-18, for his lifelong contribution to the folk art, Lavani and to the field of Tamasha.</h2>
+                                
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-12 col-10 d-block ">
+                        <div class="card">
+                            <img src="C:\Users\Lenovo\Desktop\potfol\images\LA013.jpg" class="card-img img-fluid">
+                            <div class="card-body">
+                                <h2>Yamunabai Waikar</h2>
+                                <h2 class="card-title" ></h2>Yamunabai Waikar, née Yamunabai Vikram Jawle was an Indian folk artist, known for her expertise in the Marathi folk traditions of Lavani and Tamasha, folk art forms involving music and dance and reported to be one of the leading exponents of the art genres. A recipient of the Sangeet Natak Akademi Award, she was honored by the Government of India, in 2012, with the fourth highest Indian civilian award of Padma Shri Yamunabai has shared the stage with the renowned Kathak guru, Birju Maharaj, who is reported to have appreciated her performance in 1975, staged in Delhi.[8] The performance helped to revive her career once again and she had opportunity to perform in other parts of the country such as Kolkata, Bhopal, Raipur</h2>
+                            </div>
+                        </div>
+                    </div>
+                    
+
+
+                </div>
+            </div>
+         </section>
+         
+                </div>
+
+            </div>
+         </section>
+    </body>
+</html>
+
+

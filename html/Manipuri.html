@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> BootstrapWebsite</title>
+        <link rel="stylesheet" type="text/css" href="C:\Users\Lenovo\Desktop\potfol\css\Manipuri.css">
+        <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
+<!-- Popper JS -->
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+    </head><body>
+        <div class="navi">
+            <nav class="navbar navbar-expand-md navbar-custom fixed-top">
+                <div class="container">
+                    <a href="" class="navbar-brand text-white font-weight-bold">MANIPURI</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsenavbar"> 
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse " text-center id="collapsenavbar">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#ORIGIN" class="nav-link text-white">ABOUT</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="#gall" class="nav-link text-white">GALLERY</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="#ARTIST" class="nav-link text-white">ARTIST</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="mainpage.html" class="nav-link text-white">HOME</a>
+                        </li>
+
+                    </ul>
+                </div>
+            
+                </div>
+            </nav>
+            
+        </div>
+        <section class="container origin text-center" id="ORIGIN">
+            <h1>ABOUT</h1>
+            <p> The history of the Manipuri Dance can be traced to ancient times, even before recorded history began. All other types of dance may be traced back to the Lai Haraoba Dance, the earliest type of dance to have originated in Manipur. The dancing style is characterised by peaceful vision and smooth, calm body movements and is infused with the spiritual themes of Madhura Raas of Radha-Krishna.
+
+                The Raas Leela, also known as the dance of heavenly love between Lord Krishna, Goddess Radha, and the cowherd damsels of Vrindavan, is depicted in the Manipuri dance. Guru Bipin, who served as the Manipuri Dance's instructor, director, and choreographer, is frequently called the "Father of the Manipuri Dance." </p>
+            <div class="row rowsettings">
+                </div>
+            </div>
+        </section>
+
+        <section class="imgss" id="gall">
+            <h1>GALLERY</h1>
+           <div class="container">
+               <div class="image-container">
+                   <div class="image"><img src="C:\Users\Lenovo\Desktop\potfol\images\manipuri01.jpg"  alt=""></div>
+                   <div class="image"><img src="C:\Users\Lenovo\Desktop\potfol\images\manipuri02.jpg" alt=""></div>
+                   <div class="image"><img src="C:\Users\Lenovo\Desktop\potfol\images\manipuri03.jpg" alt=""></div>
+                   <div class="image"><img src="C:\Users\Lenovo\Desktop\potfol\images\manipuri04.jpg" alt=""></div>
+                   <div class="image"><img src="C:\Users\Lenovo\Desktop\potfol\images\manipuri05.jpg" alt=""></div>
+                   <div class="image"><img src="C:\Users\Lenovo\Desktop\potfol\images\manipuri06.jpeg" alt=""></div>
+                                
+      
+               </div>
+          
+           <div class="popup-img">
+               <span>&times;</span>
+               <img src="images/manipuri06.jpeg" alt="">
+           </div>
+       </div>
+   </section>
+       <script>
+           document.querySelectorAll('.image-container img').forEach(image =>{
+               image.onclick = () =>{
+               document.querySelector('.popup-img').style.display = 'block';
+               document.querySelector('.popup-img img').src = image.getAttribute('src');
+               }
+           });
+           document.querySelector('.popup-img span').onclick = () =>{
+              document.querySelector('.popup-img').style.display = 'none';
+           }
+       </script>
+       <!-- /////////////////////ARTISTS//////////////////////////////-->
+         <section class="artist bg-light" id="ARTIST">
+            <div class="container text-center">
+                <h1>ARTIST</h1>
+                <p>Famous Artist</p>
+                <div class="row">
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-12 col-10 d-block">
+                        <div class="card">
+                            <img src="C:\Users\Lenovo\Desktop\potfol\images\MA10.jpg" class="card-img img-fluid" >
+                            <div class="card-body">
+                                <h2>Darshana Jhaveri</h2>
+                                <h2 class="card-title" ></h2>Darshana Jhaveri (born 1940), the youngest of the four Jhaveri sisters, is a leading Indian exponent of Manipuri dance, an Indian classical dance form. She is a disciple of Guru Bipin Singh, and started performing on stage in 1958 along with her sisters. She is one of the founders of the Manipuri Nartanalaya in 1972, which popularized Manipuri dance in India, and is currently headed by her, with centres at Mumbai, Kolkata and Imphal.</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-12 col-10 d-block ">
+                        <div class="card">
+                            <img src="C:\Users\Lenovo\Desktop\potfol\images\EEd.jpeg" class="card-img img-fluid">
+                            <div class="card-body">
+                                <h2>Elam Indira Devi</h2>
+                                <h2 class="card-title" ></h2>Elam Indira Devi was born on September 01, 1954 at Khwai Nagamapal Singjubung Leirak, Imphal to Elam Bidhumani Singh and Elam ongbi Tourangbam ningol Rosomani Devi. . She completed her BA from Guwahati University in 1979 and MA Manipuri in Culture & Literature from Manipur University in 1988. In 1967 Indira completed Diploma in Nitya Charya from JN Manipur Dance Academy, Imphal. She also completed Post Graduate in Raas Dance and Post Graduate in Lai-haraoba Dance in 1979 and 1984 both from JN Manipur Dance Academy, Imphal.</h2>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-12 col-10 d-block ">
+                        <div class="card">
+                            <img src="C:\Users\Lenovo\Desktop\potfol\images\bipin.jpg" class="card-img img-fluid">
+                            <div class="card-body">
+                                <h2>Guru Bipin Singh</h2>
+                                <h2 class="card-title" ></h2>Guru Bipin Singh was a director, choreographer and teacher of Manipuri dance. He is regarded as the Father of Manipuri Dance.
+                            Guru Bipin Singh was a recipient of numerous awards and titles. Some of the major ones were the prestigious title of ‘Nrityacharya’ ,‘Hanjaba’, National Sangeet Natak Akademi Award , West Bengal State Academy Award ,‘Ojha Ratna'.  </h2>
+                            </div>
+                        </div>
+                    </div>
+                    
+
+
+                </div>
+            </div>
+         </section>
+         
+                </div>
+
+            </div>
+         </section>
+    </body>
+</html>
+
+

@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap')
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	list-style: none;
+	text-decoration: none;
+	font-family: 'Josefin Sans',sans-serif;
+	text-align: left;
+	height: 100%;
+}
+
+body{
+	background: white;
+}
+
+.wrapper{
+	display: flex;
+	position: absolute;
+	box-sizing: border-box;
+}
+
+.wrapper .sidebar{
+	position: fixed;
+	width: 250px;
+	height: 100%;
+	background: #4b4276 ;
+	padding:30px 0;
+
+}
+
+.wrapper .sidebar h2{
+	color: #fff;
+	text-transform: uppercase;
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+
+.wrapper .sidebar ul li{
+	padding: 15px;
+	border-bottom: 1px solid rgba(0,0,0,0.05);
+	border-top: 1px solid rgba(225,225,225,0.05);
+	list-style-type: none;
+	text-align: left;
+}
+wrapper .sidebar ul li a .fa{
+    width:25px;
+
+}
+.wrapper .sidebar ul li a{
+	color:black;
+	display: block;
+	text-decoration: none;
+}
+.wrapper .sidebar ul li:hover{
+	background: white;
+}
+
+.front{
+    background-image: url('../images/frontimg.jpg');
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    width: 100%;
+    height: 800px;
+}
+
+.imgtext{
+	color:#4b4276;
+	padding-top: 10%;
+	padding-left: 20%;
+}
+.front h1{
+	font-size: 60px;
+}
+.front h5{
+	font-size: 20px;
+}
+
+.figure{
+	
+	padding-left: 170px;
+}
+.ourteam{
+	padding-top: 50px;
+}
+.ourteam h1{
+    padding-left: 500px;
+}
+.ourteam p{
+	padding-left: 500px;
+}

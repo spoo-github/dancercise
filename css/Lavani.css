@@ -1,0 +1,116 @@
+.navi{
+    background-image: url('../images/lavani\ bg.jpg');
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    width: 100%;
+    height: 800px;
+    
+}
+.origin{
+    padding: 50px;
+    text-align: center;
+}
+.gallery{
+    padding: 50px;
+}
+.artist{
+    padding: 50px;
+}
+.navbar-custom{
+    background-color: #4b4276;
+}
+*{
+	margin: 0;padding: 0;
+	box-sizing: border-box;
+}
+.imgss h1{
+    font-size: 50px;
+    color: #4b4276;
+    padding: 50px;
+    text-align: center;
+}
+
+.imgss{
+	position: relative;
+	min-height: 100vh;
+	background: #ddd;
+}
+
+.imgss .image-container{
+	display: flex;
+	flex-wrap: wrap;
+	gap: 15px;
+	justify-content: center;
+	padding: 10px;
+}
+
+.imgss .image-container .image{
+    height: 250px;
+    width: 350px;
+    border: 10px solid #fff;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    overflow: hidden;
+    cursor: pointer;
+}
+.imgss .image-container .image img{
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+	transition: .2s linear;
+}
+
+.imgss .image-container .image:hover img{
+	transform: scale(1.1);
+}
+
+.imgss .popup-img{
+	position: fixed;
+	top: 0; left: 0;
+	background: rgba(0,0,0,.9);
+	height: 100%;
+	width: 100%;
+	z-index: 100;
+	display: none;
+}
+.imgss .popup-img span{
+	position: absolute;
+	top: 0; right: 10px;
+	font-size: 60px;
+	font-weight: bolder;
+	color: #fff;
+	cursor: pointer;
+	z-index: 100;
+}
+
+.imgss .popup-img img{
+	position: absolute;
+	top: 50%; left: 50%;
+	transform: translate(-50%,-50%);
+	border: 5px solid #fff;
+	border-radius: 5px;
+	width: 750px;
+	object-fit: cover;
+}
+@media(max-width: 768px){
+	.imgss .popup-img img{
+         width: 95%;
+	}
+}
+.artist h1{
+    font-size: 50px;
+    color: #4b4276;
+    text-align: center;
+    margin-top: 30px;
+}
+.imgss h1{
+    font-size: 50px;
+    color: #4b4276;
+    text-align: center;
+    margin-top: 30px;
+}
+.origin h1{
+    font-size: 50px;
+    color: #4b4276;
+    text-align: center;
+    margin-top: 30px;
+}

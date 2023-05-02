@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>hiphop</title>
+        <link rel="stylesheet" type="text/css" href="C:\Users\Lenovo\Desktop\potfol\css\hiphop.css">
+        <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+        <!-- Latest compiled and minified CSS -->
+       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+
+       <!-- jQuery library -->
+       <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
+
+        <!-- Popper JS -->
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+
+        <!-- Latest compiled JavaScript -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    </head>
+    <body>
+        <div class="bgnav">
+            <nav class="navbar navbar-expand-md navbar-custom fixed-top">
+                <div class="container">
+                    <a href="" class="navbar-brand text-white font-weight-bold">HIP-HOP</a>
+    
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsenavbar">
+                        <span class="navbar-toggler-icon"></span>  </button>
+    
+                    <div class="collapse-navbar-collapse" id="collapsenavbar">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item">
+                                <a href="#abts" class="nav-link text-white">ABOUT</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#gall" class="nav-link text-white">GALLERY</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#artist" class="nav-link text-white">ARTISTS</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="mainpage.html" class="nav-link text-white">HOME</a>
+                            </li>
+    
+    
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+        <div class="container abtimg bg-light text-center" ></div>
+        
+
+        <section class="abt text-center bg-light " id="abts">
+            <h1>ABOUT</h1>
+            <div class="texth1 text-center">
+                <p></p>
+            </div>
+            <div class="para">
+                
+                <p> Hip-hop dance began during the late 1960’s and early 1970’s, originally inspired by the movements of African dancing, and flourished as a new style of dance performed on the street for the people. Hip-hop incorporates aspects of modern dance, tap, and swing, integrating music and complex movements to form artistry.
+
+                    The early history and roots of hip-hop dance are most often associated with its beginning on the East Coast, specifically New York City. But the West Coast also formed its own style of the East Coast hip-hop dance around the same time.
+                    
+                    East Coast hip-hop began with the unique rhythmic combinations created by Kool DJ Herc, a Jamaican DJ who moved to Brooklyn at the age of 12 and quickly became one of the most popular DJ’s of New York City. DJ Herc ingeniously thought to extend dance sections of songs to create better opportunities to showcase the breaking movements of dancers.
+                    
+                    West Coast hip-hop took the dance style from the East Coast and made it its own, transforming some of the frozen moves and making them more robotic. The West Coast was also where two of modern hip-hop’s most iconic styles, popping and locking, were born.             </p>
+            </div>
+        </section>
+         
+<!---images-->
+       <section class="imgss" id="gall">
+         <h1>GALLERY</h1>
+        <div class="container">
+            <div class="image-container">
+                <div class="image"><img src="C:\Users\Lenovo\Desktop\potfol\images\H1.jpg"  alt=""></div>
+                <div class="image"><img src="C:\Users\Lenovo\Desktop\potfol\images\H2.jpg" alt=""></div>
+                <div class="image"><img src="C:\Users\Lenovo\Desktop\potfol\images\h3.jpeg" alt=""></div>
+                <div class="image"><img src="C:\Users\Lenovo\Desktop\potfol\images\h4.jpg" alt=""></div>
+                <div class="image"><img src="C:\Users\Lenovo\Desktop\potfol\images\h5.jpg" alt=""></div>
+                <div class="image"><img src="C:\Users\Lenovo\Desktop\potfol\images\h6.jpg" alt=""></div>
+                <div class="image"><img src="C:\Users\Lenovo\Desktop\potfol\images\h7.jpeg" alt=""></div>
+                <div class="image"><img src="C:\Users\Lenovo\Desktop\potfol\images\h8.jpg" alt=""></div> 
+                <div class="image"><img src="C:\Users\Lenovo\Desktop\potfol\images\h9.jpg" alt=""></div>               
+   
+            </div>
+       
+        <div class="popup-img">
+            <span>&times;</span>
+            <img src="images/h5.jpg" alt="">
+        </div>
+    </div>
+</section>
+    <script>
+        document.querySelectorAll('.image-container img').forEach(image =>{
+            image.onclick = () =>{
+            document.querySelector('.popup-img').style.display = 'block';
+            document.querySelector('.popup-img img').src = image.getAttribute('src');
+            }
+        });
+        document.querySelector('.popup-img span').onclick = () =>{
+           document.querySelector('.popup-img').style.display = 'none';
+        }
+    </script>
+
+<!---images-->
+
+        <section class="arts" id="artist">
+            <h1>ARTISTS</h1>
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-4 col-10 d-block">
+                    <div class="card">
+                        <img src="C:\Users\Lenovo\Desktop\potfol\images\mj2.jpg" class="card-img img-fluid">
+                        <div class="card-body">
+                            <h2 class="card-title">MICHAEL JACKSON</h2>
+                            <p>Michael Joseph Jackson (August 29, 1958 – June 25, 2009) was an American singer, songwriter, dancer, and 
+                                philanthropist. Dubbed the "King of Pop", he is regarded as one of the most significant cultural figures 
+                                
+                                of the 20th century. Over a four-decade career, his contributions to music, dance, and fashion, along with his
+                                 publicized personal life, made him a global figure in popular culture. Jackson influenced artists across many 
+                                 music genres; through stage and video performances, he popularized complicated dance moves such as the moonwalk, 
+                                 to which he gave the name, as well as the robot.</p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-10 d-block">
+                    <div class="card">
+                        <img src="C:\Users\Lenovo\Desktop\potfol\images\aaliyah.jpg" class="card-img img-fluid">
+                        <div class="card-body">
+                            <h2 class="card-title">AALIYAH</h2>
+                            <p>Aaliyah Dana Haughton (January 16, 1979 – August 25, 2001) was an American singer and actress. 
+                                She has been credited for helping to redefine contemporary R&B, pop and hip hop,[2] 
+                                earning her the nicknames the "Princess of R&B" and "Queen of Urban Pop".Born in Brooklyn but raised in Detroit, 
+                                she first gained recognition at the age of 10, when she appeared on the television show Star Search and performed in 
+                                concert alongside Gladys Knight. At the age of 12, Aaliyah signed with Jive Records and her uncle Barry Hankerson's Blackground Records. </p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-10 d-block">
+                    <div class="card">
+                        <img src="C:\Users\Lenovo\Desktop\potfol\images\ciara 2023.webp" class="card-img img-fluid">
+                        <div class="card-body">
+                            <h2 class="card-title">CIARA</h2>
+                            <p>Ciara Princess Wilson[1] ( born October 25, 1985) is an American singer. 
+                                She rose to prominence with her debut studio album Goodies (2004), which spawned the top 
+                                five singles "1, 2 Step" (featuring Missy Elliott), "Oh" (featuring Ludacris), and "Goodies"
+                                 (featuring Petey Pablo), the latter of which topping the Billboard Hot 100 and the UK Singles Chart. 
+                                 The album was certified triple platinum by the Recording Industry Association of America (RIAA), and 
+                                 garnered two nominations at the 48th Annual Grammy Awards. Ciara was also featured on Missy Elliott's 
+                                 "Lose Control" and Bow Wow's "Like You", both of which reached number three on the Billboard Hot 100.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+    </body>
+    </html>

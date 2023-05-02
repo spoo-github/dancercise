@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> BootstrapWebsite</title>
+        <link rel="stylesheet" type="text/css" href="C:\Users\Lenovo\Desktop\potfol\css\Ballet.css">
+        <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
+<!-- Popper JS -->
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+    </head><body>
+        <div class="navi">
+            <nav class="navbar navbar-expand-md navbar-custom fixed-top">
+                <div class="container">
+                    <a href="" class="navbar-brand text-white font-weight-bold">BALLET</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsenavbar"> 
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse " text-center id="collapsenavbar">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#ORIGIN" class="nav-link text-white"> ABOUT</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="#gall" class="nav-link text-white">GALLERY</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="#ARTIST" class="nav-link text-white">ARTIST</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="mainpage.html" class="nav-link text-white">HOME</a>
+                        </li>
+
+                    </ul>
+                </div>
+            
+                </div>
+            </nav>
+            
+        </div>
+        <section class="container origin text-center" id="ORIGIN">
+            <h1>ABOUT</h1>
+            <p> Ballet originated in the Italian Renaissance courts of the 15th century. Noblemen and women were treated to lavish events, especially wedding celebrations, where dancing and music created an elaborate spectacle. Dancing masters taught the steps to the nobility, and the court participated in the performances. In the 16th century, Catherine de Medici — an Italian noblewoman, wife of King Henry II of France and a great patron of the arts — began to fund ballet in the French court. Her elaborate festivals encouraged the growth of ballet de cour, a program that included  dance, decor, costume, song, music and poetry. A century later, King Louis XIV helped to popularize and standardize the art form. A passionate dancer, he performed many roles himself, including that of the Sun King in Ballet de la nuit. His love of ballet fostered its elevation from a past time for amateurs to an endeavor requiring professional training.
+
+                By 1661, a dance academy had opened in Paris, and in 1681 ballet moved from the courts to the stage. The French opera Le Triomphe de l’Amour incorporated ballet elements, creating a long-standing opera-ballet tradition in France. By the mid-1700s French ballet master Jean Georges Noverre rebelled against the artifice of opera-ballet, believing that ballet could stand on its own as an art form. His notions — that ballet should contain expressive, dramatic movement that should reveal the relationships between characters — introduced the ballet d’action, a dramatic style of ballet that conveys a narrative. Noverre’s work is considered the precursor to the narrative ballets of the 19th century</p>                 </p>
+            <div class="row rowsettings">
+                </div>
+            </div>
+        </section>
+
+        <section class="imgss" id="gall">
+            <h1>GALLERY</h1>
+           <div class="container">
+               <div class="image-container">
+                   <div class="image"><img src="C:\Users\Lenovo\Desktop\potfol\images\BB08.jpeg"  alt=""></div>
+                   <div class="image"><img src="C:\Users\Lenovo\Desktop\potfol\images\BB07.jpeg" alt=""></div>
+                   <div class="image"><img src="C:\Users\Lenovo\Desktop\potfol\images\BB01.jpeg" alt=""></div>
+                   <div class="image"><img src="C:\Users\Lenovo\Desktop\potfol\images\BAAR02.avif" alt=""></div>
+                   <div class="image"><img src="C:\Users\Lenovo\Desktop\potfol\images\BB003.jpg" alt=""></div>
+                   <div class="image"><img src="C:\Users\Lenovo\Desktop\potfol\images\BB04.jpg" alt=""></div>
+                   <div class="image"><img src="C:\Users\Lenovo\Desktop\potfol\images\BB05.jpeg" alt=""></div> 
+                   <div class="image"><img src="C:\Users\Lenovo\Desktop\potfol\images\BB06.jpeg" alt=""></div>               
+      
+               </div>
+          
+           <div class="popup-img">
+               <span>&times;</span>
+               <img src="images/h5.jpg" alt="">
+           </div>
+       </div>
+   </section>
+       <script>
+           document.querySelectorAll('.image-container img').forEach(image =>{
+               image.onclick = () =>{
+               document.querySelector('.popup-img').style.display = 'block';
+               document.querySelector('.popup-img img').src = image.getAttribute('src');
+               }
+           });
+           document.querySelector('.popup-img span').onclick = () =>{
+              document.querySelector('.popup-img').style.display = 'none';
+           }
+       </script>
+   
+       <!-- /////////////////////ARTISTS//////////////////////////////-->
+         <section class="artist bg-light" id="ARTIST">
+            <div class="container text-center">
+                <h1>ARTIST</h1>
+                <p>Famous Artist</p>
+                <div class="row">
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-12 col-10 d-block">
+                        <div class="card">
+                            <img src="C:\Users\Lenovo\Desktop\potfol\images\BART01.jpg" class="card-img img-fluid" >
+                            <div class="card-body">
+                                <h2>Alexander Campbell</h2>
+                                <h2 class="card-title" ></h2> Alexander Campbell (born 1986) is an Australian ballet dancer who is currently a principal dancer in the Royal Ballet at Covent Garden, London.
+
+                                Campbell is well known not just in dancing circles. His father is Alan Campbell, who was a selector and manager for Cricket New South Wales, and State Director of Coaching for 20 years.In 2002, Campbell won the McDonald's Ballet Scholarship at the Sydney Eisteddfod enabling him to approach the Royal Ballet Upper School in London. In 2003, he auditioned for the school and was offered a place. In that same year, he was a finalist in the Prix de Lausanne and won the Genee International Ballet Competition.BIRMINGHAM ROYAL BALLET
+
+                                Cinderella NVC Arts Warner Classics (2011) (Dancing Master)</h2>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-12 col-10 d-block ">
+                        <div class="card">
+                            <img src="C:\Users\Lenovo\Desktop\potfol\images\BAAR02.avif" class="card-img img-fluid" >
+                            <div class="card-body">
+                                <h2>RFrancesca Hayward</h2>
+                                <h2 class="card-title" ></h2>Francesca Hayward (born 4 July 1992) is a Kenyan-born English ballet dancer and actress. She is a principal dancer in the Royal Ballet at Covent Garden in London. In 2019, she starred as Victoria the White Cat in the musical film Cats, an adaptation of the stage musical of the same name.During her training, Hayward was recognised as an exceptionally gifted dancer and after joining the Royal Ballet in 2010, was increasingly cast in more prominent roles during major productions. She was promoted to First Artist in 2013, Soloist in 2014, First Soloist in 2015 and Principal in 2016. Hayward's talent and technique have received critical praise and acclaim.
+
+                                In 2012, Hayward danced a pas de deux from The Flower Festival in Genzano with fellow Royal Ballet dancer James Hay at the Erik Bruhn Competition in Canada. She danced Clara for the first time in The Nutcracker at Covent Garden in 2012.</h2>
+                                
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-12 col-10 d-block ">
+                        <div class="card">
+                            <img src="C:\Users\Lenovo\Desktop\potfol\images\BAAR3.jpg" class="card-img img-fluid">
+                            <div class="card-body">
+                                <h2>Vadim Muntagirov</h2>
+                                <h2 class="card-title" ></h2>Vadim Muntagirov is a Russian ballet dancer. He is currently a principal dancer at The Royal Ballet in London and previously a lead principal dancer at the English National Ballet Muntagirov’s awards include the 2011 Outstanding Male Performance (Classical), 2015 and 2018 Best Male Dancer at the Critics’ Circle National Dance Awards, the 2013 and 2018 Benois de la danse and the 2021 Dance Europe Outstanding Dancer Award. As a guest artist he has danced with such companies including Paris Opera Ballet, Mariinsky and American Ballet Theatre, in repertory including Solor (La Bayadère), Armand (Marguerite and Armand) and at National Ballet of Japan, Bavarian State Ballet, Mikhailovsky and Cape Town City Ballet.AWARDS Laureate at Prix de Lausanne
+                                Second place and silver medal at Arabesque competition
+                                First place and gold medal at Vaganova Prix competition
+                            </div>
+                        </div>
+                    </div>
+                    
+
+
+                </div>
+            </div>
+         </section>
+         
+                </div>
+
+            </div>
+         </section>
+    </body>
+</html>
